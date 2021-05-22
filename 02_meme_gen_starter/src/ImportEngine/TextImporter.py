@@ -1,8 +1,9 @@
 from typing import List
 
-from src.QuoteEngine import QuoteModel
+from QuoteEngine import QuoteModel
 from .ImportInterface import ImportInterface
 from .helper import parse_text_line
+
 
 class TextImporter(ImportInterface):
     allowed_extensions = ['txt']

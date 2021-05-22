@@ -2,7 +2,7 @@ from typing import List
 import pandas
 
 from .ImportInterface import ImportInterface
-from src.QuoteEngine import QuoteModel
+from QuoteEngine import QuoteModel
 
 
 class CSVImporter(ImportInterface):

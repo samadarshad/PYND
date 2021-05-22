@@ -3,7 +3,7 @@ from typing import List
 import docx
 
 from .ImportInterface import ImportInterface
-from src.QuoteEngine import QuoteModel
+from QuoteEngine import QuoteModel
 
 
 class DocxImporter(ImportInterface):

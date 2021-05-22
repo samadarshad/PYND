@@ -3,7 +3,7 @@ import random
 import subprocess
 from typing import List
 
-from src.QuoteEngine import QuoteModel
+from QuoteEngine import QuoteModel
 from .ImportInterface import ImportInterface
 from .TextImporter import TextImporter
 

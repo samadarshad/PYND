@@ -1,7 +1,7 @@
 from typing import List
 
 from .ImportInterface import ImportInterface
-from src.QuoteEngine import QuoteModel
+from QuoteEngine import QuoteModel
 from .DocxImporter import DocxImporter
 from .CSVImporter import CSVImporter
 from .PDFImporter import PDFImporter
