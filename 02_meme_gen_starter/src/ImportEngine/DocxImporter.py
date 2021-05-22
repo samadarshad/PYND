@@ -18,8 +18,11 @@ class DocxImporter(ImportInterface):
 
         for para in doc.paragraphs:
             if para.text != "":
-                parse = para.text.split(',')
-                new_item = QuoteModel(parse[0], parse[1])
+                line = para.text
+                parse = line.split(' - ')
+                body = parse[0].strip('"')
+                author = parse[1]
+                new_item = QuoteModel(body, author)
                 items.append(new_item)
 
         return items

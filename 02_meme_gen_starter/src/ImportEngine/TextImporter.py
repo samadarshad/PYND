@@ -18,8 +18,11 @@ class TextImporter(ImportInterface):
             for line in f.readlines():
                 line = line.strip('\n\r').strip()
                 if len(line) > 0:
-                    parse = line.split(',')
-                    new_item = QuoteModel(parse[0], parse[1])
+                    parse = line.split(' - ')
+                    body = parse[0].strip('"')
+                    author = parse[1]
+                    new_item = QuoteModel(body, author)
                     items.append(new_item)
 
         return items
+
