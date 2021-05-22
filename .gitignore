@@ -1,0 +1,10 @@
+
+02_meme_gen_starter/venv/
+
+.idea/
+
+02_meme_gen_starter/src/ImportEngine/__pycache__/
+
+02_meme_gen_starter/src/QuoteEngine/__pycache__/
+
+02_meme_gen_starter/src/ImageEngine/__pycache__/
