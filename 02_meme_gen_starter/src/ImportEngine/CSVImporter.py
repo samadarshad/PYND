@@ -16,8 +16,7 @@ class CSVImporter(ImportInterface):
         items = []
         df = pandas.read_csv(path, header=0)
 
-        for index, row in df.iterrows():
-            new_item = QuoteModel(row['body'], row['author'])
-            items.append(new_item)
+        for _, row in df.iterrows():
+            items.append(QuoteModel(*row))
 
         return items

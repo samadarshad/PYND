@@ -2,7 +2,7 @@ from typing import List
 
 from src.QuoteEngine import QuoteModel
 from .ImportInterface import ImportInterface
-
+from .helper import parse_text_line
 
 class TextImporter(ImportInterface):
     allowed_extensions = ['txt']
@@ -16,12 +16,9 @@ class TextImporter(ImportInterface):
             items = []
 
             for line in f.readlines():
-                line = line.strip('\n\r').strip()
-                if len(line) > 0:
-                    parse = line.split(' - ')
-                    body = parse[0].strip('"')
-                    author = parse[1]
-                    new_item = QuoteModel(body, author)
-                    items.append(new_item)
+                try:
+                    items.append(QuoteModel(*parse_text_line(line)))
+                except IndexError as e:
+                    pass
 
         return items
