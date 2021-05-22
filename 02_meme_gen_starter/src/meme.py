@@ -1,7 +1,6 @@
 import os
 import random
 
-# @TODO Import your Ingestor and MemeEngine classes
 from ImportEngine import Importer as Ingestor
 from ImageEngine import MemeEngine
 from QuoteEngine import QuoteModel
