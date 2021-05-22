@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod
 from typing import List
 from src.QuoteEngine import QuoteModel
 
+
 class ImportInterface(ABC):
 
     allowed_extensions = []

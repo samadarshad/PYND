@@ -8,6 +8,7 @@ from src.QuoteEngine import QuoteModel
 
 pdftotext = '/Users/samadarshad/dev/PYND/02_meme_gen_starter/third_party/xpdf-tools-mac-4.03/bin64/pdftotext'
 
+
 class PDFImporter(ImportInterface):
     allowed_extensions = ['pdf']
 

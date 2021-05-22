@@ -25,4 +25,3 @@ class TextImporter(ImportInterface):
                     items.append(new_item)
 
         return items
-

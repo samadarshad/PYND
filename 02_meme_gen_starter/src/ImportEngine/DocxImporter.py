@@ -5,6 +5,7 @@ import docx
 from .ImportInterface import ImportInterface
 from src.QuoteEngine import QuoteModel
 
+
 class DocxImporter(ImportInterface):
     allowed_extensions = ['docx']
 

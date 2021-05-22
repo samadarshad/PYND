@@ -4,6 +4,7 @@ import pandas
 from .ImportInterface import ImportInterface
 from src.QuoteEngine import QuoteModel
 
+
 class CSVImporter(ImportInterface):
     allowed_extensions = ['csv']
 
