@@ -15,4 +15,5 @@ if __name__ == "__main__":
     # print(parsed)
 
     meme = MemeEngine('./tmp')
-    print(meme.make_meme('/Users/samadarshad/dev/PYND/02_meme_gen_starter/src/_data/photos/dog/xander_2.jpg', 'hey', 'sam'))
+    print(meme.make_meme(
+        '/Users/samadarshad/dev/PYND/02_meme_gen_starter/src/_data/photos/dog/xander_2.jpg', 'hey', 'sam'))
