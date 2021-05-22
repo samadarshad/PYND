@@ -1,5 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 
+
 def generate_postcard(in_path, out_path, message=None, crop=None, width=None):
     """Create a Postcard With a Text Greeting
 
@@ -25,7 +26,7 @@ def generate_postcard(in_path, out_path, message=None, crop=None, width=None):
 
     if message is not None:
         draw = ImageDraw.Draw(img)
-        font = ImageFont.truetype('./fonts/LilitaOne-Regular.ttf', size=20)
+        font = ImageFont.truetype('/Users/samadarshad/dev/PYND/02_meme_gen_starter/src/ImageEngine/fonts/LilitaOne-Regular.ttf', size=20)
         draw.text((10, 30), message, font=font, fill='white')
 
     img.save(out_path)
